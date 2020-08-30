@@ -7,11 +7,11 @@ import javax.persistence.*;
 public class UserDTO {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_ID")
     private long id;
 
-    @Column(name = "NAME")
+    @Column(name = "USERNAME")
     private String name;
 
     @Column(name = "ADDRESS")
